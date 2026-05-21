@@ -1300,6 +1300,20 @@ a.social-link:hover .social-link__handle { color: var(--c-orange); }
 .footer__col a { color: rgba(231, 225, 217, 0.85); transition: color .25s ease; }
 .footer__col a:hover { color: var(--c-orange); }
 
+.footer__social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+.footer__social-link svg {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  opacity: 0.75;
+  transition: opacity .25s ease;
+}
+.footer__social-link:hover svg { opacity: 1; }
+
 .footer__col--tagline p {
   font-family: var(--font-display);
   font-size: 1.1rem;
