@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SIMMA. Consultora de Comunicación Estratégica y Relaciones Institucionales en Mendoza, Argentina. Profesionalizamos tu organización uniendo orden interno y posicionamiento externo." />
+  <meta name="theme-color" content="#1C375B" />
+  <meta name="author" content="SIMMA — Martina Simón" />
+
+  <!-- Open Graph / redes sociales -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="SIMMA. — Comunicación Estratégica y Relaciones Institucionales" />
+  <meta property="og:description" content="Profesionalizamos tu organización uniendo lo que pasa puertas adentro y lo que el mercado ve afuera." />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:site_name" content="SIMMA." />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <title>SIMMA. — Comunicación Estratégica y Relaciones Institucionales</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/simma-logo.png" />
+  <link rel="apple-touch-icon" href="assets/simma-logo.png" />
+
+  <!-- Tipografías oficiales del manual de marca: Sora + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- EmailJS SDK (defer no es válido en CDN sin module, lo cargamos antes del cierre) -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Schema.org structured data para SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "SIMMA.",
+    "description": "Consultora de Comunicación Estratégica y Relaciones Institucionales.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Mendoza",
+      "addressCountry": "AR"
+    },
+    "email": "simma.consultora@gmail.com",
+    "telephone": "+5492613078320",
+    "founder": {
+      "@type": "Person",
+      "name": "Martina Simón",
+      "jobTitle": "Licenciada en Relaciones Institucionales · Técnica Universitaria en Ceremonial"
+    },
+    "areaServed": ["Mendoza", "Argentina", "Online"],
+    "sameAs": ["https://instagram.com/simma.consultora"]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Skip link para accesibilidad por teclado -->
+  <a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__brand" aria-label="SIMMA. Inicio">
+        <img src="assets/simma-logo.png" alt="SIMMA." class="nav__logo nav__logo--orange" width="160" height="48" />
+        <img src="assets/simma-logo-cream.png" alt="" class="nav__logo nav__logo--cream" aria-hidden="true" width="160" height="48" />
+      </a>
+
+      <nav class="nav__links" aria-label="Navegación principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#sobre">Sobre SIMMA</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <a href="#contacto" class="btn btn--pill nav__cta">
+        Trabajemos <span class="btn__arrow" aria-hidden="true">›</span>
+      </a>
+
+      <!-- Botón hamburguesa para mobile -->
+      <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+    </div>
+
+    <!-- Menú mobile desplegable -->
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Navegación móvil" hidden>
+      <a href="#servicios" class="mobile-menu__link">
+        <span class="mobile-menu__num">01</span>
+        <span class="mobile-menu__label">Servicios</span>
+        <span class="mobile-menu__arrow" aria-hidden="true">›</span>
+      </a>
+      <a href="#sobre" class="mobile-menu__link">
+        <span class="mobile-menu__num">02</span>
+        <span class="mobile-menu__label">Sobre SIMMA<span class="dot">.</span></span>
+        <span class="mobile-menu__arrow" aria-hidden="true">›</span>
+      </a>
+      <a href="#contacto" class="mobile-menu__link">
+        <span class="mobile-menu__num">03</span>
+        <span class="mobile-menu__label">Contacto</span>
+        <span class="mobile-menu__arrow" aria-hidden="true">›</span>
+      </a>
+      <a href="https://wa.me/5492613078320" target="_blank" rel="noopener" class="mobile-menu__cta">
+        Hablemos por WhatsApp
+        <span class="btn__arrow" aria-hidden="true">›</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- ============ SVG SPRITES ============ -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <!-- Asterisco (recurso gráfico de las misceláneas) -->
+      <symbol id="asterisk" viewBox="0 0 24 24">
+        <g fill="currentColor">
+          <rect x="11" y="2" width="2" height="20" />
+          <rect x="2" y="11" width="20" height="2" />
+          <rect x="4.5" y="4.5" width="2" height="15" transform="rotate(-45 5.5 12)" />
+          <rect x="4.5" y="4.5" width="2" height="15" transform="rotate(45 5.5 12)" />
+        </g>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- ============ HERO ============ -->
+  <main id="main">
+  <section class="hero" id="hero">
+    <!-- Símbolo de cimas oficial ampliado (recurso del manual: misceláneas) -->
+    <div class="hero__decor" aria-hidden="true">
+      <img src="assets/simma-symbol.png" alt="" class="hero__symbol hero__symbol--main" width="726" height="269" />
+      <img src="assets/simma-symbol.png" alt="" class="hero__symbol hero__symbol--echo" width="726" height="269" />
+    </div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow">
+        <svg class="hero__asterisk" viewBox="0 0 24 24" aria-hidden="true"><use href="#asterisk" /></svg>
+        Comunicación Estratégica · Relaciones Institucionales
+      </p>
+
+      <h1 class="hero__title">
+        <span class="hero__word">Orden</span> <em>interno.</em><br class="hero__br" />
+        <span class="hero__word">Posiciona<br class="hero__wordbreak">miento</span> <em>externo.</em>
+      </h1>
+
+      <p class="hero__lead">
+        SIMMA. es la consultora que profesionaliza tu organización uniendo dos mundos
+        que suelen estar desconectados: lo que pasa puertas adentro y lo que el mercado ve afuera.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#contacto" class="btn btn--primary">
+          <span>Quiero trabajar con SIMMA<span class="dot">.</span></span>
+          <span class="btn__arrow" aria-hidden="true">›</span>
+        </a>
+        <a href="#servicios" class="btn btn--ghost">
+          Ver servicios
+          <span class="btn__arrow" aria-hidden="true">›</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Indicador scroll -->
+    <div class="hero__scroll" aria-hidden="true">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ============ INTRO / FILOSOFÍA ============ -->
+  <section class="intro">
+    <div class="intro__grid">
+      <div class="intro__col">
+        <p class="section-eyebrow">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#asterisk" /></svg>
+          Nuestra convicción
+        </p>
+        <h2 class="intro__title">
+          En un entorno competitivo, no basta con <em>parecer</em> profesional;
+          hay que <em>serlo</em> en cada proceso, contacto y decisión interna.
+        </h2>
+      </div>
+      <div class="intro__col intro__col--text">
+        <p>
+          Por eso, nuestro enfoque se centra en <strong>analizar, ordenar y potenciar</strong>
+          la identidad real, garantizando que la estructura institucional sea el respaldo
+          más sólido de la comunicación externa.
+        </p>
+        <p class="intro__pull">
+          Solo la coherencia garantiza un crecimiento sostenible en el tiempo.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICIOS ============ -->
+  <section class="services" id="servicios">
+    <header class="services__header">
+      <p class="section-eyebrow">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#asterisk" /></svg>
+        Servicios
+      </p>
+      <h2 class="services__title">
+        Cinco frentes para construir<br />
+        una organización <em>coherente</em>.
+      </h2>
+    </header>
+
+    <div class="services__list">
+
+      <!-- Servicio I -->
+      <article class="service" data-roman="I">
+        <header class="service__head">
+          <span class="service__roman">I</span>
+          <h3 class="service__title">Diagnóstico de Coherencia Institucional</h3>
+          <p class="service__lead">
+            Analizamos la sintonía entre lo que la marca comunica y lo que el cliente vivencia,
+            para transformar ruidos internos en oportunidades de crecimiento.
+          </p>
+        </header>
+        <div class="service__body">
+          <div class="service__block">
+            <h4>Para qué sirve<span class="dot">.</span></h4>
+            <p>Para identificar exactamente por qué algunos procesos fallan y cómo corregirlos antes de que afecten la experiencia del cliente.</p>
+          </div>
+          <div class="service__block">
+            <h4>La Solución<span class="dot">.</span></h4>
+            <p>Aportamos claridad técnica sobre la <strong>identidad puesta en práctica</strong> a través de la metodología de <strong>Visita de Incógnito (Mystery Guest)</strong>.</p>
+          </div>
+          <div class="service__block service__block--takeaway">
+            <h4>Qué te llevás<span class="dot">.</span></h4>
+            <ul>
+              <li>Informe Semáforo (estado de situación actual)</li>
+              <li>Mapa de Prioridades estratégico</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- Servicio II -->
+      <article class="service" data-roman="II">
+        <header class="service__head">
+          <span class="service__roman">II</span>
+          <h3 class="service__title">Gestión de Vínculos y Experiencias</h3>
+          <p class="service__lead">
+            Establecemos estándares de hospitalidad para que la excelencia sea un sistema constante
+            y el reflejo fiel de los valores de la organización.
+          </p>
+        </header>
+        <div class="service__body">
+          <div class="service__block">
+            <h4>Para qué sirve<span class="dot">.</span></h4>
+            <p>Para que el público reciba la misma calidad de atención siempre, logrando que el profesionalismo sea la norma y no la excepción.</p>
+          </div>
+          <div class="service__block">
+            <h4>La Solución<span class="dot">.</span></h4>
+            <p>Profesionalizamos el trato con cada público estratégico, asegurando que la marca transmita confianza en cada contacto.</p>
+          </div>
+          <div class="service__block service__block--takeaway">
+            <h4>Qué te llevás<span class="dot">.</span></h4>
+            <ul>
+              <li>Guía de Hospitalidad y Atención</li>
+              <li>Plan de Relacionamiento institucional</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- Servicio III -->
+      <article class="service" data-roman="III">
+        <header class="service__head">
+          <span class="service__roman">III</span>
+          <h3 class="service__title">Identidad y Comunicación Estratégica</h3>
+          <p class="service__lead">
+            Estructuramos un marco profesional a la comunicación para proteger la autoridad de la marca
+            y asegurar un posicionamiento coherente en el mercado.
+          </p>
+        </header>
+        <div class="service__body">
+          <div class="service__block">
+            <h4>Para qué sirve<span class="dot">.</span></h4>
+            <p>Para que tu marca proyecte seriedad y claridad en cada mensaje, permitiéndote diferenciarte de la competencia por tu solidez institucional.</p>
+          </div>
+          <div class="service__block">
+            <h4>La Solución<span class="dot">.</span></h4>
+            <p>Diseñamos estructuras que eliminan la fragmentación visual y narrativa, aportando orden a la identidad de la organización.</p>
+          </div>
+          <div class="service__block service__block--takeaway">
+            <h4>Qué te llevás<span class="dot">.</span></h4>
+            <ul>
+              <li>Guía de Identidad Institucional</li>
+              <li>Estructura de Canales para una información fluida y sin ruidos</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- Servicio IV -->
+      <article class="service" data-roman="IV">
+        <header class="service__head">
+          <span class="service__roman">IV</span>
+          <h3 class="service__title">Capacitación y Alineación de Equipos</h3>
+          <p class="service__lead">
+            Integramos la visión estratégica con el factor humano, asegurando que cada integrante
+            del equipo comprenda y aplique los estándares de calidad definidos.
+          </p>
+        </header>
+        <div class="service__body">
+          <div class="service__block">
+            <h4>Para qué sirve<span class="dot">.</span></h4>
+            <p>Para fortalecer el compromiso del personal y lograr que todos los colaboradores transmitan el mismo mensaje y nivel de servicio.</p>
+          </div>
+          <div class="service__block">
+            <h4>La Solución<span class="dot">.</span></h4>
+            <p>Alineamos la cultura interna con los objetivos de la organización para que el equipo traccione con seguridad hacia un mismo lugar.</p>
+          </div>
+          <div class="service__block service__block--takeaway">
+            <h4>Qué te llevás<span class="dot">.</span></h4>
+            <ul>
+              <li>Talleres Prácticos de Cultura Institucional</li>
+              <li>Material de Consulta Rápida para el personal</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- Servicio V -->
+      <article class="service" data-roman="V">
+        <header class="service__head">
+          <span class="service__roman">V</span>
+          <h3 class="service__title">Gestión y Organización de Eventos</h3>
+          <p class="service__lead">
+            Gestionamos hitos institucionales bajo estrictos criterios de logística y ceremonial,
+            garantizando que cada detalle sea un reflejo fiel de la calidad de la marca.
+          </p>
+        </header>
+        <div class="service__body">
+          <div class="service__block">
+            <h4>Para qué sirve<span class="dot">.</span></h4>
+            <p>Para que en lanzamientos, eventos de fidelización o visitas clave, vos puedas ejercer tu rol de anfitrión mientras nosotros nos ocupamos de la <strong>ejecución técnica</strong> y la imagen institucional.</p>
+          </div>
+          <div class="service__block">
+            <h4>La Solución<span class="dot">.</span></h4>
+            <p>Brindamos soporte integral en la planificación, coordinación y <strong>presencia en el campo</strong>, asegurando que la estrategia se cumpla de principio a fin (antes, durante y post evento).</p>
+          </div>
+          <div class="service__block service__block--takeaway">
+            <h4>Qué te llevás<span class="dot">.</span></h4>
+            <ul>
+              <li>Plan Operativo Detallado</li>
+              <li>Guión de Ceremonial</li>
+              <li><strong>Supervisión presencial</strong> del evento e informe de resultados post-evento</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Bloque "no encontraste el servicio" -->
+    <aside class="custom-cta">
+      <div class="custom-cta__content">
+        <h3>¿No encontraste el servicio ideal?</h3>
+        <p>
+          Si tu situación es otra y buscás un abordaje específico, contanos de qué se trata.
+          Diseñamos <strong>propuestas a medida</strong> para resolver desafíos institucionales
+          que requieren un enfoque exclusivo.
+        </p>
+        <a href="#contacto" class="btn btn--primary">
+          Contame tu caso
+          <span class="btn__arrow" aria-hidden="true">›</span>
+        </a>
+      </div>
+      <img src="assets/simma-logo-navy.png" alt="" class="custom-cta__logo" aria-hidden="true" width="765" height="231" loading="lazy" />
+    </aside>
+  </section>
+
+  <!-- ============ SOBRE SIMMA ============ -->
+  <section class="direction" id="sobre">
+    <div class="direction__grid">
+      <div class="direction__media">
+        <picture>
+          <source srcset="assets/direction-photo.webp" type="image/webp" />
+          <img src="assets/direction-photo.jpg"
+               alt="Mesa de trabajo: cuaderno, lámpara y laptop reflejan el método ordenado y técnico de SIMMA."
+               class="direction__photo"
+               width="1200" height="1501"
+               loading="lazy" />
+        </picture>
+        <div class="direction__overlay">
+          <span class="direction__overlay-tag">SIMMA<span class="dot">.</span></span>
+          <p class="direction__overlay-text">
+            Orden interno.<br />
+            Posicionamiento externo<span class="dot">.</span>
+          </p>
+        </div>
+      </div>
+      <div class="direction__text">
+        <p class="section-eyebrow">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#asterisk" /></svg>
+          Sobre SIMMA<span class="dot">.</span>
+        </p>
+        <h2>
+          <span class="direction__name">Martina Simón</span>
+        </h2>
+        <p class="direction__role">
+          Licenciada en Relaciones Institucionales · Técnica Universitaria en Ceremonial
+        </p>
+        <p class="direction__bio">
+          Con una visión que integra la rigurosidad técnica y la gestión operativa, la consultora
+          se fundó bajo una convicción clara: <strong>el posicionamiento real no se construye
+          con promesas, sino con estructuras sólidas que respalden cada palabra de una marca.</strong>
+        </p>
+        <p class="direction__bio">
+          El enfoque de la dirección entrega herramientas tangibles que las organizaciones pueden
+          aplicar de inmediato para alcanzar el estándar que siempre proyectaron.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTO ============ -->
+  <section class="contact" id="contacto">
+    <div class="contact__inner">
+      <header class="contact__header">
+        <p class="section-eyebrow contact__eyebrow">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#asterisk" /></svg>
+          Contacto
+        </p>
+        <h2 class="contact__title">
+          Es momento de ordenar<br />
+          mi <em>organización</em>.
+        </h2>
+        <p class="contact__lead">
+          Elegí el canal que prefieras. Te respondemos a la brevedad.
+        </p>
+      </header>
+
+      <div class="contact__grid">
+
+        <!-- Tarjeta WhatsApp -->
+        <a href="https://wa.me/5492613078320?text=Hola%20SIMMA%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios."
+           target="_blank" rel="noopener"
+           class="contact-card contact-card--whatsapp">
+          <div class="contact-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="currentColor">
+              <path d="M16 3C9 3 3.5 8.6 3.5 15.5c0 2.4.7 4.7 1.9 6.7L3 29l7-1.8c1.9 1 4 1.6 6.1 1.6 6.9 0 12.5-5.6 12.5-12.5S22.9 3 16 3zm0 22.7c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.2 1.1 1.1-4-.2-.4c-1.1-1.7-1.6-3.6-1.6-5.6 0-5.7 4.6-10.3 10.3-10.3s10.3 4.6 10.3 10.3-4.5 10.6-10 10.6zm5.6-7.7c-.3-.2-1.8-.9-2.1-1s-.5-.2-.7.2c-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.6.2-.2.2-.3.3-.5.1-.2.1-.4 0-.5-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1 1-1 2.5 1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.4z"/>
+            </svg>
+          </div>
+          <div class="contact-card__text">
+            <h3>WhatsApp</h3>
+            <p>Conversación directa, respuesta rápida.</p>
+            <span class="contact-card__cta">
+              Escribir ahora
+              <span class="btn__arrow" aria-hidden="true">›</span>
+            </span>
+          </div>
+        </a>
+
+        <!-- Tarjeta Email (visual, redirige al form) -->
+        <a href="#form" class="contact-card contact-card--email">
+          <div class="contact-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="7" width="24" height="18" rx="1.5"/>
+              <path d="M4 9 L16 19 L28 9"/>
+            </svg>
+          </div>
+          <div class="contact-card__text">
+            <h3>Email</h3>
+            <p>Contanos tu caso con detalle. Te respondemos por mail.</p>
+            <span class="contact-card__cta">
+              Completar formulario
+              <span class="btn__arrow" aria-hidden="true">›</span>
+            </span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Bloque de información institucional -->
+      <div class="contact-info">
+        <div class="contact-info__col">
+          <h4 class="contact-info__label">Modalidades de trabajo</h4>
+          <ul class="contact-info__list">
+            <li>
+              <span class="contact-info__tag">Presencial</span>
+              <span class="contact-info__value">Mendoza, Argentina<span class="dot">.</span></span>
+            </li>
+            <li>
+              <span class="contact-info__tag">Remoto</span>
+              <span class="contact-info__value">Consultoría estratégica online<span class="dot">.</span></span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-info__col">
+          <h4 class="contact-info__label">Email directo</h4>
+          <a href="mailto:simma.consultora@gmail.com" class="contact-info__email">
+            simma.consultora@gmail.com
+          </a>
+        </div>
+
+        <div class="contact-info__col">
+          <h4 class="contact-info__label">Redes sociales</h4>
+          <ul class="contact-info__social">
+            <li>
+              <a href="https://instagram.com/simma.consultora" target="_blank" rel="noopener" class="social-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="5"/>
+                  <circle cx="12" cy="12" r="4"/>
+                  <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/>
+                </svg>
+                <span>Instagram</span>
+                <span class="social-link__handle">@simma.consultora</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/simma.consultora" target="_blank" rel="noopener" class="social-link">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43A2.06 2.06 0 1 1 5.34 3.3a2.06 2.06 0 0 1 0 4.13zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/>
+                </svg>
+                <span>LinkedIn</span>
+                <span class="social-link__handle">@simma.consultora</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Formulario -->
+      <div class="form-wrap" id="form">
+        <div class="form-wrap__head">
+          <p class="section-eyebrow">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#asterisk" /></svg>
+            Escribinos
+          </p>
+          <h3>Contanos sobre tu organización</h3>
+        </div>
+
+        <form id="contact-form" class="form" novalidate>
+          <div class="form__row">
+            <div class="form__field">
+              <label for="f-name">Nombre y apellido<span aria-hidden="true">*</span></label>
+              <input type="text" id="f-name" name="from_name" required autocomplete="name" />
+            </div>
+            <div class="form__field">
+              <label for="f-email">Email<span aria-hidden="true">*</span></label>
+              <input type="email" id="f-email" name="reply_to" required autocomplete="email" />
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="form__field">
+              <label for="f-org">Organización</label>
+              <input type="text" id="f-org" name="organization" autocomplete="organization" />
+            </div>
+            <div class="form__field">
+              <label for="f-service">Servicio de interés</label>
+              <select id="f-service" name="service">
+                <option value="">Seleccioná uno</option>
+                <option>I · Diagnóstico de Coherencia Institucional</option>
+                <option>II · Gestión de Vínculos y Experiencias</option>
+                <option>III · Identidad y Comunicación Estratégica</option>
+                <option>IV · Capacitación y Alineación de Equipos</option>
+                <option>V · Gestión y Organización de Eventos</option>
+                <option>Propuesta a medida</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form__field">
+            <label for="f-msg">Tu mensaje<span aria-hidden="true">*</span></label>
+            <textarea id="f-msg" name="message" rows="5" required
+                      placeholder="Contanos brevemente la situación actual de tu organización y qué te gustaría resolver."></textarea>
+          </div>
+
+          <div class="form__actions">
+            <button type="submit" class="btn btn--primary form__submit">
+              <span class="form__submit-label">Enviar mensaje</span>
+              <span class="btn__arrow" aria-hidden="true">›</span>
+            </button>
+            <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <img src="assets/simma-lockup-cream.png" alt="SIMMA. Comunicación Estratégica · Relaciones Institucionales" class="footer__lockup" width="765" height="310" loading="lazy" />
+      </div>
+
+      <div class="footer__cols">
+        <div class="footer__col">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#sobre">Sobre SIMMA<span class="dot">.</span></a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="https://wa.me/5492613078320" target="_blank" rel="noopener">+54 9 2613 07-8320</a></li>
+            <li><a href="mailto:simma.consultora@gmail.com">simma.consultora@gmail.com</a></li>
+            <li><a href="https://instagram.com/simma.consultora" target="_blank" rel="noopener">@simma.consultora</a></li>
+            <li><a href="https://www.linkedin.com/company/simma.consultora" target="_blank" rel="noopener">LinkedIn · @simma.consultora</a></li>
+          </ul>
+        </div>
+        <div class="footer__col footer__col--tagline">
+          <p>Orden interno.<br />Posicionamiento externo<span class="dot">.</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© <span id="year"></span> SIMMA. Todos los derechos reservados.</p>
+      <p>Diseño bajo Manual de Marca SIMMA.</p>
+    </div>
+  </footer>
+
+  <!-- ============ WHATSAPP FLOTANTE ============ -->
+  <a href="https://wa.me/5492613078320?text=Hola%20SIMMA%2C%20vengo%20de%20la%20web%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n."
+     target="_blank" rel="noopener"
+     class="wa-float"
+     aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+      <path d="M16 3C9 3 3.5 8.6 3.5 15.5c0 2.4.7 4.7 1.9 6.7L3 29l7-1.8c1.9 1 4 1.6 6.1 1.6 6.9 0 12.5-5.6 12.5-12.5S22.9 3 16 3zm0 22.7c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.2 1.1 1.1-4-.2-.4c-1.1-1.7-1.6-3.6-1.6-5.6 0-5.7 4.6-10.3 10.3-10.3s10.3 4.6 10.3 10.3-4.5 10.6-10 10.6zm5.6-7.7c-.3-.2-1.8-.9-2.1-1s-.5-.2-.7.2c-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.6.2-.2.2-.3.3-.5.1-.2.1-.4 0-.5-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1 1-1 2.5 1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.4z"/>
+    </svg>
+    <span class="wa-float__label">WhatsApp</span>
+  </a>
+
+  <!-- Scripts al final con defer para no bloquear el render inicial -->
+  <script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script defer src="script.js"></script>
+</body>
+</html>
