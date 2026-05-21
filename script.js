@@ -21,9 +21,9 @@
    Luego pegá los valores acá abajo:
    ----------------------------------------------------------- */
 const EMAILJS_CONFIG = {
-  PUBLIC_KEY:  "TU_PUBLIC_KEY_ACA",   // 👈 reemplazar
-  SERVICE_ID:  "TU_SERVICE_ID_ACA",   // 👈 reemplazar
-  TEMPLATE_ID: "TU_TEMPLATE_ID_ACA",  // 👈 reemplazar
+  PUBLIC_KEY:  "nUvwnLv3NJnDRE8ef",   // 👈 reemplazar
+  SERVICE_ID:  "service_wzuv3ny",   // 👈 reemplazar
+  TEMPLATE_ID: "template_j87j74l",  // 👈 reemplazar
 };
 
 /* ---------- Inicialización EmailJS ---------- */
